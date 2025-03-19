@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
+    <title>Lista de Cadastros</title>
     <link rel="stylesheet" type="text/css" href="../static/css/cadastros.css">
 </head>
 <body>
@@ -35,9 +35,40 @@
 						</tr>
 					</tbody>
 				</table>
-				</div>
+			</div>
         </div>
-        <button type="button">Adicionar</button>
+        <button id="add" type="button">Adicionar</button>
+		<dialog>
+			<div class="dialog">
+			<div class="formulario">
+				<h2>Novo Cadastro</h2>
+				<form>
+				<div class="user-box">
+					<label>Nome</label><br>
+					<input type="text" name="" required="">
+				</div>
+				<div class="user-box">
+					<label>E-Mail</label><br>
+					<input type="text" name="" required="">
+				</div>
+				<div class="user-box">
+					<label>CPF</label><br>
+					<input type="text" name="" required="">
+				</div>
+				<div class="user-box">
+					<label>Endereço</label><br>
+					<input type="text" name="" required="">
+				</div>
+				</form>
+			</div>
+			</div>
+			<div class="botoes-dialog">
+				<button id="concluir">Concluir</button>
+				<button id="cancelar">Cancelar</button>
+			</div>
+			
+		</dialog>
     </div>
+	<script src="../static/js/cadastros.js"></script>
 </body>
 </html>
